@@ -1,30 +1,30 @@
 # Xalar.io
 
-Xalar.io is an open source protocol that enables easy and flexible payment contracts based on blockchian for customers, employers and workers.
+Xalar.io is an open source protocol that enables easy and flexible payment contracts based on blockchain for customers, employers and workers.
 
 ## Abstract
 We believe that every person in the world should have the opportunity to participate in the economy and contribute to society. Therefore we want to provide easy to use tools based on blockchain so as to remove political and social barriers.
 
-Workers are key players in any economy and should be protected. Clear rules based on smart contracts give people a powerful tool to work without worries, knowing what their rights from the start of a contractual relationship.
+Workers are key players in any economy and should be protected. Clear rules based on smart contracts give people a powerful tool to work without worries, knowing their rights from the start of a contractual relationship.
 
-Companies hiring people because they live near the working site it's an outdated paradigm. With tools of the modern society, it should be obvious that qualified people should be hired no matter their location. Clear hiring rules and automated processes provide the companies the reliability they need.
+Companies hiring people because they live near the working site is an outdated paradigm. With the tools of modern society, it should be obvious that qualified people should be hired no matter their location. Clear hiring rules and automated processes provide companies the reliability they need.
 
 In the following sections, we aim to describe the protocol that can be a game changer for people and companies all around the world.
 
 ## Specification
 ![Xalar.io Protocol](https://res.cloudinary.com/vonpix-srl/image/upload/v1569770396/Alternativas_protocolo_o3y6hh.png "Protocol")
 
-The protocol is kept simple but general enough to allow various use cases to be implemented (from the common ones to the ones more complex).
+The protocol is kept simple but flexible enough to allow various use cases to be implemented (from the common ones to the ones more complex).
 
 ### Parties involved
 There are two key parties involved in this protocol:
- - The hiring party that is willing to pay an amount of money for a service based on pre-established rules, that we will refer as company from now on.
- - The hired party that is willing to provide a service in exchange of a payment, or series of payment, based on pre-established rules, that will be referred as the worker from now on.
+ - The hiring party that is willing to pay an amount of money for a service based on pre-established rules, henceforth referred to as 'company'.
+ - The hired party that is willing to provide a service in exchange for payment, or series of payment, based on pre-established rules, henceforth referred to as 'worker'.
 
 ### Contracts
 This protocol proposes the following set of smart contracts:
- - The `Company Pool` that should hold the fund to provide to all the `Work Agreements`, that should be previously authorized. The main motivation is to simplify the process to the company and manage only one source of funding to the work agreement. The main responsibility of this contract is to manage the fund, communicate with the agreements and do the right transfers to the workers whenever is requiered.
- - The `Work Agreement` that should have a common interface but implement the logic that each work agreement needs. Each agreement should be assigned to only one worker. Both the worker and the company should have a set of methods that allow each party to interact with it as needed.
+ - The `Company Pool` that should hold the funds to provide to all the `Work Agreements`, which should have been previously authorized. The main motivation is to simplify the process for the company and manage only one source of funding to the work agreement. The main responsibility of this contract is to manage the fund, communicate with the agreements and do the right transfers to the workers whenever is required.
+ - The `Work Agreement` should have a common interface but implement the logic that each work agreement needs. Each agreement should be assigned to only one worker. Both the worker and the company should have a set of methods that allow each party to interact with it as needed.
 
  #### Work Agreement
 *DRAFT* - The variables and functions detailed below MUST be implemented.
